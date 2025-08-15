@@ -11,7 +11,7 @@ public class Lottery {
     public Ball getRandomBall() {
         return new Ball(
             this.colorSupplier.getRandomColor(),
-            this.random.nextInt(MAX_BALL_NUMBER + 1)
+            this.random.nextInt(MAX_BALL_NUMBER) + 1
         );
     }
 }
